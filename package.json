@@ -1,0 +1,16 @@
+{
+  "name": "discord-monitor",
+  "version": "1.0.0",
+  "description": "Monitor 1-3 Discord channels simultaneously with configurable instance selector",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": ["discord", "monitor", "electron"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^28.0.0"
+  }
+}

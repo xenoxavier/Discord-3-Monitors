@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+
+# Electron session data and credentials (if ever created locally)
+Partitions/
+Session Storage/
+Local Storage/
+IndexedDB/
+Cookies/
+Cache/

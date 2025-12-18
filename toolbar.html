@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'">
+  <title>Discord Monitor</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 50px;
+      background-color: #202225;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      border-bottom: 1px solid #1a1b1e;
+      -webkit-user-select: none;
+      -webkit-app-region: drag;
+    }
+
+    .toolbar-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .selector-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      -webkit-app-region: no-drag;
+    }
+
+    label {
+      color: #b9bbbe;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    select {
+      background-color: #2f3136;
+      color: #ffffff;
+      border: 1px solid #1a1b1e;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 13px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    select:hover {
+      border-color: #5865F2;
+    }
+
+    select:focus {
+      border-color: #5865F2;
+      box-shadow: 0 0 0 2px rgba(88, 101, 242, 0.3);
+    }
+
+    .keyboard-hint {
+      color: #72767d;
+      font-size: 11px;
+      -webkit-app-region: no-drag;
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar-left">
+    <h1>Discord Monitor</h1>
+    <div class="selector-container">
+      <label for="instance-count">Instances:</label>
+      <select id="instance-count">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
+      </select>
+    </div>
+  </div>
+  <div class="keyboard-hint">Cmd/Ctrl+B to toggle sidebars</div>
+
+  <script src="toolbar-renderer.js"></script>
+</body>
+</html>
